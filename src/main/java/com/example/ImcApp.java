@@ -63,8 +63,7 @@ public class ImcApp extends Application {
         lblCategoria = new Label("Categoria: --");
 
         pbImc = new ProgressBar(0);
-        pbImc.setMaxWidth(Double.MAX_VALUE); // Opcional: hace que la barra use el ancho disponible
-
+        pbImc.setMaxWidth(Double.MAX_VALUE); 
         btnCalcular.setOnAction(e -> calcularImc());
         btnLimpiar.setOnAction(e -> limpiarCampos());
 
@@ -146,8 +145,8 @@ public class ImcApp extends Application {
         txtAltura.clear();
 
         lblImc.setText("IMC: --");
-        lblCategoria.setText("Categoria: --");
-        lblCategoria.setStyle(""); // Resetea los estilos inline aplicados por el cálculo anterior
+        lblCategoria.setText("Categoria: ");
+        lblCategoria.setStyle(""); 
 
         pbImc.setProgress(0);
     }
